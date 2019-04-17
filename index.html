@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>iam|SANG|mai</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="styles/style.css">
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="stickToTop">
     <div id="navBar">
-        <a href="#home" class="navLink"><b>Sang Mai</b></a>
+        <a href="#top" class="navLink"><b>Sang Mai</b></a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="rightFloat">
             <a href="#projectContainer" class="navLink">Projects</a>
             <a href="#aboutContainer" class="navLink">About</a>
-            <a href="#resume" class="navLink">Resume</a>
+            <a href="#resumeContainer" class="navLink">Resume</a>
             <a href="#contactContainer" class="navLink">Contact</a>
         </div>
     </div>
 </div>
 
 <!-- Header -->
-<header style="max-width:1500px;" id="home">
-
-</header>
+    <div class="heroImage">
+    </div>
 
 <!-- Page content -->
 <div id="pageContent" style="max-width:1564px">
@@ -37,22 +35,24 @@
     <!-- About Section -->
     <div id="aboutContainer">
         <h3 class="sectionTitle">About</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+        <p>My name is Sang Mai and I am a software developer located in St.Louis, Missouri.
         </p>
     </div>
 
+    <!-- Resume Section -->
+    <div id="resumeSection">
+        <h3 class="sectionTitle">Resume</h3>
+    </div>
     <!-- Contact Section -->
     <div id="contactContainer">
         <h3 class="sectionTitle">Contact</h3>
-        <form action="/action_page.php" target="_blank">
+        <form action="" target="_blank">
             <input class="inputField" type="text" placeholder="Name" required name="Name">
             <input class="inputField" type="text" placeholder="Email" required name="Email">
             <input class="inputField" type="text" placeholder="Subject" required name="Subject">
             <input class="inputField" type="text" placeholder="Message" required name="Message">
-            <button class="contactSubmitBtn" w3-button w3-black" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            <button id="contactSubmitBtn" type="submit">
+                SEND MESSAGE
             </button>
         </form>
     </div>

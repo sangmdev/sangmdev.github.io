@@ -2,10 +2,25 @@
     padding:0;
     margin:0;
 }
+.heroImage{
+    padding-top:50%;
+    height: 50%;
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+body{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:15px;
+    line-height: 1.5;
+    height: 100%;
+}
 .stickToTop{
     position:fixed;
     width:100%;
-    z-index:1
+    z-index:1;
 }
 #navBar{
     width:100%;
@@ -16,7 +31,14 @@
     padding:8px 16px;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
+#navBar a:hover{
+    background-color: lightgrey;
+}
+#navBar a{
+    font-family:Verdana, Geneva, sans-serif ;
+}
 .rightFloat{
+    margin-right: 20px;
     float:right;
 }
 .navLink{
@@ -48,12 +70,21 @@
     margin-bottom:16px;
     border: 1px solid #ccc;
 }
-#contactContainer, #aboutContainer, #projectContainer{
+#contactContainer, #aboutContainer, #projectContainer, #resumeSection{
     padding:0.01em 16px;
-    padding-top:32px;
 }
-.contactSubmitBtn{
-    width:100%;
+#contactSubmitBtn{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    color:#fff;
+    background-color:#000;
 }
 .sectionTitle{
     border-color:#f1f1f1;
@@ -63,9 +94,12 @@
 }
 footer{
     display:inline-block;
-    width:auto;
+    width:100%;
     color:#fff;
     background-color:#000;
     padding-top:16px;
     padding-bottom:16px;
+}
+footer p{
+    text-align:center;
 }
